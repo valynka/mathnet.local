@@ -1,0 +1,106 @@
+Array ( [0] => 8433 [personid] => 8433 
+[1] => [lname_eng] => Kozlov
+[2] => [fname_eng] => Valery 
+[3] => [sname_eng] => Vasil'evich 
+[4] => [lname_rus] => Козлов 
+[5] => [fname_rus] => Валерий 
+[6] => [sname_rus] => Васильевич 
+[7] => [phone] => +7 (499) 135 22 91, +7 (495) 237 45 32 
+[8] => [e_mail] => kozlov@pran.ru, vvkozlov@mi.ras.ru 
+[9] => [fax] => +7 (499) 135 05 55 
+[10] => [who_is] => 
+[11] => [editorid] => 18133 
+[12] => [block_date] => 
+[13] => [userid] => 
+[14] => [session] => 
+[15] => [prim_personid] => 8433 
+[16] => [zvanie_id] => 2 
+[17] => [degree_id] => 2 
+[18] => [status_id] => 2 
+[19] => [vak_id] => 12 
+[20] => [website] => http://www.mi.ras.ru/~vvkozlov 
+[21] => [abroad] => 0 
+[22] => [defence_date] => 1978 
+[23] => [last_svd] => Nov 13 2016 08:58:11:597PM 
+[24] => [UDC] => 510.6, 515.1, 517.9, 517.911, 519.21, 531.01, 517.19, 517, 517.925, 517.974, 517.984, 531.36, 517.43 
+[25] => [MSC] => 
+[26] => [lname_s_eng] => kozlov 
+[27] => [lname_s_rus] => козлов 
+[28] => [noWebShow] => 0 
+[29] => [login] => kozlov 
+[30] => [password] => 48f59225b6de83422596a2e4a7cc6961 
+[31] => [accesslevelID] => 0 
+[32] => [iwanttobeshown] => 0 
+[33] => [logo_name] => vv1.jpg 
+[34] => [show_logo_onweb] => 1 
+[35] => [show_name_rus] => В. В. Козлов 
+[36] => [show_name_eng] => V. V. Kozlov 
+[37] => [only_eng] => 0 
+[38] => [if_edit_rus_showname] => 0 
+[39] => [if_edit_eng_showname] => 0 
+[40] =>[pubs_name_rus] => http://www.mi.ras.ru/~vvkozlov/publ.html 
+[41] => [show_pubs_rus_onweb] => 1 
+[42] => [service_personid] => 8433 
+[43] => [orderby_lname_s_rus] => eibfi3 
+[44] => [orderby_lname_s_eng] => kozlov 
+[45] => [mrauthid] => 194427 
+[46] => [show_amsbib_pubs_onweb] => 0 
+[47] => [get_amsbib_pubs] => 1 
+[48] => [pubs_name_eng] => 
+[49] => [show_pubs_eng_onweb] => 0 
+[50] => [creatorID] => 0 
+[51] => [zblai] => kozlov.valerij-vasilievich 
+[52] => [fullp_ppsID] => 0 
+[53] => [mainp_ppsID] => -100 
+[54] => [gsai] => 
+[55] => [elibpersonid] => 104713 
+[56] => [orcid] => 
+[57] => [scopusauthorid] => 7402207934 
+[58] => [researcherid] => Q-4001-2016 
+[59] => [arxivauthorid] => 
+[60] => [show_email_onweb] => 1 
+[61] => [sexid] => 1 
+[62] => [inspire] => 
+[63] => [researchgate] => 
+[64] => [IstinaResearcherID] => 
+[65] => [cv_name_rus] => 
+[66] => [cv_name_eng] => 
+[67] => 1978 
+[68] =>[DS] => 11/13/2016 
+[69] => [DB] => 1/1/1950 
+[70] => [date_birth] => 1/1/1950 
+[71] => [DD] => 1/1/1800 
+[72] => [date_death] => 1/1/1800 
+[73] => [is_date_birth_visible] => 1 
+[74] => 0 
+[75] => [phone_noshow] => +7 (495) 434 38 49 д, +7 (495) 237 45 32 
+[76] => [fax_noshow] => 
+[77] => [e_mail_noshow] => 
+[78] => [sci_subject_eng] => [i]Scientific interests:[/i][br]
+[79] => [keywords_eng] => 
+[80] => [biography_eng] => Born 1 January 1950 in Ryazanskaya district, Russia. 1967–1972: 
+[81] => [main_pubs_eng] =>\begin{thebibliography}{99}\end{thebibliography}
+[82] => [sci_subject_rus] => [i]Научные интересы:[/i][br] Теоретическая и статистическая механика, смежные вопросы качественной
+[83] => [keywords_rus] => аналитическая механика, теория динамических систем, вариационное исчисление, 
+[84] => [biography_rus] => Родился 1 января 1950 г., Рязанская обл., СССР.[br] В 1972 г. закончил механико-математический факультет Московского государственного университета им. М. В. Ломоносова. 
+[85] => [main_pubs_rus] =>\begin{thebibliography}{9}\end{thebibliography}
+[86] => [pacs] => 
+[87] => [if_hide_keywords_onwebsite] => 0 
+[88] => [if_hide_sci_subject_onwebsite] => 0 
+[89] => 12 
+[90] => [vak_code] => 01.02.01 
+[91] => [vak_name_eng] => Theoretical mechanics 
+[92] => [vak_name_rus] => теоретическая механика 
+[93] => 2 
+[94] => [degree_name_eng] => Doctor of physico-mathematical sciences 
+[95] => [degree_name_rus] => доктор физико-математических наук 
+[96] => 2 
+[97] => [status_name_eng] => Member of the Russian Academy of Sciences 
+[98] => [status_name_rus] => академик РАН 
+[99] => 2 
+[100] => [zvanie_name_eng] => Professor 
+[101] => [zvanie_name_rus] => профессор 
+[102] => [sexname_rus] => Мужской 
+[103] => [sexname_eng] => Male 
+[104] => 
+[105] => ) 

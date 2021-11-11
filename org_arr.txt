@@ -1,0 +1,49 @@
+Array ( [0] => 8433 [personid] => 8433 
+[1] => 1 [prim] => 1 
+[2] => 748 [orgid] => 748 
+[3] => Sep 23 2008 12:00:00:000AM [start_date] => Sep 23 2008 12:00:00:000AM 
+[4] => [orgname_alt_rus] => 
+[5] => [orgname_alt_eng] => 
+[6] => 09/23/2008 [DS] => 09/23/2008 
+[7] => Gubkina st., 8 Moscow, 119991, Russia [address] => Gubkina st., 8 Moscow, 119991, Russia 
+[8] => Steklov Mathematical Institute of Russian Academy of Sciences [orgname] => Steklov Mathematical Institute of Russian Academy of Sciences 
+[9] => ул  Губкина 8 г  Москва 119991 Russia [adrus] => ул  Губкина 8 г  Москва 119991 Russia 
+[10] => Математический институт им. В.А. Стеклова Российской академии наук [orgnamerus] => Математический институт им. В.А. Стеклова Российской академии наук 
+[11] => 1 [show_name_with_city] => 1 
+[12] => Moscow [city] => Moscow 
+[13] => г. Москва [city_rus] => г. Москва 
+[14] => 0 [org_noWebShow] => 0 )
+
+
+Array ( [0] => 8433 [personid] => 8433 
+[1] => 0 [prim] => 0 
+[2] => 3020 [orgid] => 3020 
+[3] => Jan 1 2015 12:42:26:690PM [start_date] => Jan 1 2015 12:42:26:690PM 
+[4] => [orgname_alt_rus] => 
+[5] => [orgname_alt_eng] => 
+[6] => 01/01/2015 [DS] => 01/01/2015 
+[7] => Leninskii prosp., 14 Moscow, 119991, Russia [address] => Leninskii prosp., 14 Moscow, 119991, Russia 
+[8] => Russian Academy of Sciences [orgname] => Russian Academy of Sciences 
+[9] => Ленинский просп 14 г  Москва 119991 Russia [adrus] => Ленинский просп 14 г  Москва 119991 Russia 
+[10] => Российская академия наук [orgnamerus] => Российская академия наук 
+[11] => 0 [show_name_with_city] => 0 
+[12] => Moscow [city] => Moscow 
+[13] => г. Москва [city_rus] => г. Москва 
+[14] => 0 [org_noWebShow] => 0 )
+
+
+Array ( [0] => 8433 [personid] => 8433 
+[1] => 0 [prim] => 0 
+[2] => 595 [orgid] => 595 
+[3] => Sep 5 2008 12:00:00:000AM [start_date] => Sep 5 2008 12:00:00:000AM 
+[4] => [orgname_alt_rus] => 
+[5] => [orgname_alt_eng] => 
+[6] => 09/05/2008 [DS] => 09/05/2008 
+[7] => Vorob'evy gory, Moscow, 119899, Russia [address] => Vorob'evy gory, Moscow, 119899, Russia 
+[8] => Lomonosov Moscow State University, Faculty of Mechanics and Mathematics [orgname] => Lomonosov Moscow State University, Faculty of Mechanics and Mathematics 
+[9] => Воробьевы горы г  Москва 119899 Russia [adrus] => Воробьевы горы г  Москва 119899 Russia 
+[10] => Московский государственный университет имени М. В. Ломоносова, механико-математический факультет [orgnamerus] => Московский государственный университет имени М. В. Ломоносова, механико-математический факультет 
+[11] => 0 [show_name_with_city] => 0 
+[12] => Moscow [city] => Moscow 
+[13] => г. Москва [city_rus] => г. Москва 
+[14] => 0 [org_noWebShow] => 0 )

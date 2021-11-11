@@ -1,0 +1,362 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf8">
+		<meta name="description" content="%meta_desc%">
+		<meta name="keywords" content="%meta_key%">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Alegreya|Raleway" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="../../css/main.css" rel="stylesheet">
+		<!--<link rel="stylesheet/less" type="text/css" href="/css/style.less">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>-->
+		<script src="../../js/changelang.js"></script>
+		<script src="../../js/show_links.js"></script>
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<div class="content">
+					<header>
+					<div class="header_left">
+						<div class="change-lang">
+							<img src="../../img/lang.png" id="lang" onclick="ChangePicture()">
+						</div>
+						<p class="logo">Math-Net.Ru</p>
+						<nav>
+							<ul class="menu" id="menu">
+								<li><a href="../../index.html">Главная</a></li>
+								<li><a href="./ej.html" class="active">Журналы</a></li>
+								<li><a href="../person/person.html">Персоналии</a></li>
+								<li><a href="../org/organisation.html">Организации</a></li>
+								<li><a href="#" onclick="showConfMenu()">Конференции</a>
+									<ul class="submenu" id="sub_conf">
+										<li><a href="../conf/conf_cur.html">Ближайшие</a></li>
+										<li><a href="../conf/conf_fut.html">Планируемые</a></li>
+										<li><a href="../conf/conf_archive.html">Архив по годам</a></li>
+										<li><a href="../conf/conf_reg.html">Регистрация конференции</a></li>
+									</ul>
+								</li>
+								<li><a href="#" onclick="showSemMenu()">Семинары</a>
+									<ul class="submenu" id="sub_sem">
+										<li><a href="#">Ближайшие</a></li>
+										<li><a href="#">Календарь</a></li>
+										<li><a href="#">Список</a></li>
+										<li><a href="#">Архив по годам</a></li>
+										<li><a href="#">Регистрация семинара</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Видеотека</a></li>
+								<li><a href="#">Личный кабинет</a></li>
+							</ul>
+						</nav>
+						<nav class="mobile">
+							<i class="fa fa-globe" aria-hidden="true" title="Web" onclick="showSocLinks()"></i>
+							<i class="fa fa-tags" aria-hidden="true" title="Полезные ссылки" onclick="showLinks()"></i>
+							<!--<i class="fa fa-sign-in" aria-hidden="true" title="Персональный вход" onclick="showEntry()"></i>-->
+							<i class="fa fa-user-o" aria-hidden="true" title="Персональный вход" onclick="showEntry()"></i>
+							<i class="fa fa-bars" aria-hidden="true" title="Меню" onclick="showMenu()"></i>
+						</nav>
+					</div>	
+										
+					<div class="user-entry" id="entry">
+							<p class="title">Персональный вход:</p>
+						<!--<form name="user-entry" action="#" method="post">
+							<p><input type="text" name="login" placeholder="Логин"></p>
+							<p><input type="password" name="password" placeholder="Пароль"></p>
+							<p><label><input type="checkbox" name="remember_me">Запомнить&nbsp;пароль</label></p>
+							<p><input type="submit" name="user_reg" value="Войти"></p>
+							<div class="reg_links"><a href="#">Забыли пароль?</a>	
+							<a href="#">Регистрация</a></div>
+						</form>-->
+						
+						<section class="user-panel">
+						<p>ФИО</p>
+						<p><b>Ваша организация:</b> Математический институт им. В.А. Стеклова Российской академии наук</p>
+							<ul>
+								<li><a href="../pers_office/collection.html">Моя коллекция</a></li>	
+								<li><a href="../pers_office/manuscript.html">Загрузить рукопись</a></li>	
+								<li><a href="../pers_office/info.html">Личная информация</a></li>	
+								<li><a href="../pers_office/pubs.html">Список публикаций</a></li>
+								<li><a href="#">Выход</a></li>
+							</ul>
+						</section>
+					</div>
+					
+				</header>
+				<aside class="left" id = "left">
+					<i class="fa fa-tags" aria-hidden="true" title="Полезные ссылки" id="tags" onclick="showLeft()"></i>
+					<ul class="search" id="search">
+						<li><a href="" class="search_pubs">Поиск публикаций</a></li>
+						<li><a href="" class="search_links">Поиск ссылок</a></li>
+					</ul>
+					<section class="serv_links" id="serv_links">
+						<ul>
+							<li><a href="#">Программное обеспечение</a></li>	
+							<li><a href="#">Классификаторы</a></li>	
+							<li><a href="#">Полезные ссылки</a></li>	
+							<li><a href="#">Пользовательское соглашение</a></li>
+						</ul>
+					</section>
+					<section class="soc_links" id="soc_links">
+						<ul>
+							<li><span class="fa fa-rss-square fa-lg"></span><a href="#"><b>RSS</b></a></li>	
+							<li><a href="#">Google</a></li>	
+							<li><a href="#">Youtube</a></li>	
+							<li><a href="#">MathJax</a></li>	
+							<li><a href="#">Crossref</a></li>
+						</ul>		
+					</section>
+				</aside>
+			
+				<main class="main" id="main">
+					<div class="jour-main">
+					<div class="info-message">
+						Вниманию подписчиков 2017 года: подписчикам печатной версии на период подписки открыт свободный доступ к полному электронному архиву журнала. <a href="#">Подробнее...</a>
+					</div>
+						<h2>Дискретная математика</h2>
+						<h3><a href="#">Discrete Mathematics and Applications</a></h3>
+						
+						<nav class="jour-menu">
+							<ul>
+								<li><a href="./jour_main.html" class="active">Общая информация</a></li>
+								<li><a href="./current_num.html">Последний выпуск</a></li>
+								<li><a href="#">Скоро в журнале</a></li>
+								<li><a href="#">Архив</a></li>
+								<li><a href="./IF_details.html">Импакт-фактор</a></li>
+								<li><a href="#">Правила для авторов</a></li>
+								<li><a href="#">Загрузить рукопись</a></li>
+								<!--<li><a href="#">Авторский договор</a></li>-->
+								<!--<li><a href="#">Историческая справка</a></li>-->
+							</ul>
+						</nav>
+						<div></div><div class="img-box"><img src="../../img/dm_cover.jpg">
+							<img src="../../img/sm_eng_mn.jpg" class="eng-cover"></div>
+						<p>Журнал "Дискретная математика" издается Отделением математики Российской академии наук с 1989 года. В течение года выпускается один том, состоящий из четырех выпусков.</p>
+						<p>В журнале публикуются оригинальные статьи объемом до одного печатного листа по различным разделам дискретной математики, в том числе по комбинаторному анализу, теории графов, теории управляющих систем, теории функциональных систем, криптографии, теории кодирования, вероятностным задачам дискретной математики, алгоритмам и анализу их сложности, комбинаторным и вычислительным задачам теории чисел и алгебры.</p>
+						<p>По заказу Редакционной коллегии публикуются обзорные статьи по этим разделам математики, рецензии на книги и информационные материалы.</p>
+						<section class="jour-info">
+							<div class="table">
+								<ul>
+									<li>Адрес:</li>
+									<li>119991, г. Москва, ул. Губкина, 8, комн. 622</li>
+								</ul>
+								<ul>
+									<li>Телефон:</li>
+									<li><a href="tel:+74999410176">+7 (499) 941 01 76</a>, <a href="tel:+74959848141">+7 (495) 984 81 41 * 37 00</a></li>
+								</ul>
+								<ul>
+									<li>E-mail:</li>
+									<li><a href="mailto:dma@mi.ras.ru">dma@mi.ras.ru</a></li>
+								</ul>
+								<ul>
+									<li>Website:</li>
+									<li><a href="http://www.mathnet.ru/dm">http://www.mathnet.ru/dm</a></li>
+								</ul>
+								<ul>
+									<li>ISSN:</li>
+									<li>2305-3143 (online), 0234-0860 (print)</li>
+								</ul>
+								<ul>
+									<li>Учредители:</li>
+									<li>Российская академия наук, Математический институт им. В.А. Стеклова Российской академии наук</li>
+								</ul>
+								<ul>
+									<li>Издатель:</li>
+									<li><a href="#">Математический институт им. В.А. Стеклова Российской академии наук</a></li>
+								</ul>
+								<ul>
+									<li>Копирайт:</li>
+									<li>Российская академия наук, Математический институт им. В.А. Стеклова Российской академии наук</li>
+								</ul>
+							</div>
+							<div class="table">
+								<ul>
+									<li>MathSciNet:</li>
+									<li><a href="#">http://www.ams.org/mathscinet/search/journaldoc.html?cn=Diskret_Mat</a></li>
+								</ul>
+								<ul>
+									<li>zbMATH:</li>
+									<li><a href="#">http://zbmath.org/journals/?q=se:00001297|00001402</a></li>
+								</ul>
+								<ul>
+									<li>Web of Science:</li>
+									<li>Индексируется в Web of Science Core Collection</li>
+								</ul>
+								<ul>
+									<li>Scopus:</li>
+									<li><a href="#">http://www.scopus.com/source/sourceInfo.url?sourceId=25894</a></li>
+								</ul>
+								<ul>
+									<li>eLibrary.Ru:</li>
+									<li><a href="#">http://elibrary.ru/title_about.asp?id=7778</a></li>
+								</ul>
+								<ul>
+									<li>Англ. версия:</li>
+									<li><a href="#">Discrete Mathematics and Applications</a></li>
+								</ul>
+							</div>
+						</section>
+						<section class="editorial">
+							<p>Редакционная коллегия</p>
+							<ul>
+								<li><a href="#">Алексеев Валерий Борисович</a>, зам. главного редактора </li>
+								<li><a href="#">Кудрявцев Валерий Борисович</a>, зам. главного редактора </li>
+								<li><a href="#">Ватутин Владимир Алексеевич</a></li>
+								<li><a href="#" class="dd">Колчин Валентин Федорович</a></li>
+							</ul>
+						</section>
+						
+					</div>
+				</main>
+				
+				<aside class="right" id="right">
+					<section class="jour-search">
+						<p>Дискрет. матем.</p>
+						<form name="jour-search" action="#" method="post">
+							<label>Год:
+								<input type="text">
+							</label>
+							<label>Том:
+								<input type="text">
+							</label>
+							<label>Выпуск:
+								<input type="text">
+							</label>
+							<label>Страница:
+								<input type="text">
+							</label>
+							<input type="submit" value="Найти">
+						</form>
+					</section>
+				
+					<section class="statistics yellow">
+						<div class="table">
+							<ul>
+								<li>Публикаций:</li>
+								<li>124</li>
+							</ul>
+							<ul>
+								<li>Научных статей:</li>
+								<li>93953</li>
+							</ul>
+							<ul>
+								<li>Авторов:</li>
+								<li>200136</li>
+							</ul>
+							<ul>
+								<li>Ссылок на журнал:</li>
+								<li>186802</li>
+							</ul>
+							<ul>
+								<li>Цитированных статей:</li>
+								<li>81175</li>
+							</ul>
+						</div>
+					</section>
+					<section class="statistics yellow">
+						<p>Импакт-фактор Math-Net.Ru</p>
+						<div class="table">
+							<ul>
+								<li><a href="#">за 2016 год:</a></li>
+								<li><a href="#">0.767</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">за 2015 год:</a></li>
+								<li><a href="#">0.616</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">за 2014 год:</a></li>
+								<li><a href="#">0.547</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">за 2013 год:</a></li>
+								<li><a href="#">0.333</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">за 2012 год:</a></li>
+								<li><a href="#">0.381</a></li>
+							</ul>
+						</div>
+					</section>
+					<section class="statistics yellow">
+						<p>Импакт-фактор Web of Science</p>
+						<div class="table">
+							<ul>
+								<li>за 2016 год:</li>
+								<li>0.767</li>
+							</ul>
+							<ul>
+								<li>за 2015 год:</li>
+								<li>0.616</li>
+							</ul>
+							<ul>
+								<li>за 2014 год:</li>
+								<li>0.547</li>
+							</ul>
+							<ul>
+								<li>за 2013 год:</li>
+								<li>0.333</li>
+							</ul>
+							<ul>
+								<li>за 2012 год:</li>
+								<li>0.381</li>
+							</ul>
+						</div>
+					</section>
+					<section class="statistics yellow">
+						<p>Индексы Scopus</p>
+						<div class="table triple">
+							<ul>
+								<li>2016</li>
+								<li>CiteScore</li>
+								<li>0.767</li>
+							</ul>
+							<ul>
+								<li>2016</li>
+								<li>SNIP</li>
+								<li>0.616</li>
+							</ul>
+							<ul>
+								<li>2015</li>
+								<li>CiteScore</li>
+								<li>0.547</li>
+							</ul>
+							<ul>
+								<li>2015</li>
+								<li>IPP</li>
+								<li>0.333</li>
+							</ul>
+							<ul>
+								<li>2014</li>
+								<li>CiteScore</li>
+								<li>0.381</li>
+							</ul>
+						</div>
+					</section>
+					<section class="statistics yellow">
+						<ul>
+							<li><a href="#">Часто публикуемые авторы</a></li>
+							<li><a href="#">Часто цитируемые авторы</a></li>
+							<li><a href="#">Часто цитируемые статьи</a></li>
+							<li><a href="#">Популярные статьи</a></li>
+						</ul>
+					</section>
+					
+				</aside>
+			</div>
+			<footer>
+				<p>&copy; <a href="#">Математический институт им. В. А. Стеклова РАН</a>, 2017</p>
+				<nav class="bottom_nav">
+					<a href="#">Пользовательское соглашение</a>
+					<a href="#">Регистрация</a>
+					<a href="#"> Логотипы</a>
+				</nav>
+				<p><a href="mailto:math-net2017_02@mi.ras.ru"><span class="fa fa-envelope fa-2x"></span>Обратная связь</a></p>
+			</footer>
+		</div>
+		
+		
+	</body>
+</html>

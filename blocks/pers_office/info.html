@@ -1,0 +1,478 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf8">
+		<meta name="description" content="%meta_desc%">
+		<meta name="keywords" content="%meta_key%">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Alegreya|Raleway" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href="../../css/main.css" rel="stylesheet">
+		<!--<link rel="stylesheet/less" type="text/css" href="/css/style.less">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>-->
+		<script src="../../js/changelang.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="content">
+				<header>
+					<div class="header_left">
+						<div class="change-lang">
+							<img src="../../img/lang.png" id="lang" onclick="ChangePicture()">
+						</div>
+					<p class="logo">Math-Net.Ru</p>
+						<nav>
+							<ul class="menu">
+								<li><a href="../..index.html" class="active">Главная</a></li>
+								<li><a href="../jour/ej.html">Журналы</a></li>
+								<li><a href="../person/person.html">Персоналии</a></li>
+								<li><a href="../org/organisation.html">Организации</a></li>
+								<li><a href="../conf/conference.html">Конференции</a>
+									<ul class="submenu">
+										<li><a href="../conf/conf_cur.html">Ближайшие</a></li>
+										<li><a href="../conf/conf_fut.html">Планируемые</a></li>
+										<li><a href="../conf/conf_archive.html">Архив по годам</a></li>
+										<li><a href="../conf/conf_reg.html">Регистрация конференции</a></li>
+									</ul>
+								</li>
+								<li><a href="../seminar/seminar_soon.html">Семинары</a>
+									<ul class="submenu">
+										<li><a href="#">Ближайшие</a></li>
+										<li><a href="#">Календарь</a></li>
+										<li><a href="#">Список</a></li>
+										<li><a href="#">Архив по годам</a></li>
+										<li><a href="#">Регистрация семинара</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Видеотека</a></li>
+								<li><a href="#">Личный кабинет</a></li>
+							</ul>
+						</nav>
+					</div>
+					
+					<div class="user-entry">
+							<p class="title">Персональный вход:</p>
+						<!--<form name="user-entry" action="#" method="post">
+							<p><input type="text" name="login" placeholder="Логин"></p>
+							<p><input type="password" name="password" placeholder="Пароль"></p>
+							<p><label><input type="checkbox" name="remember_me">Запомнить&nbsp;пароль</label></p>
+							<p><input type="submit" name="user_reg" value="Войти"></p>
+							<div class="reg_links"><a href="#">Забыли пароль?</a>	
+							<a href="#">Регистрация</a></div>
+						</form>-->
+						
+						<section class="user-panel">
+						<p>ФИО</p>
+						<p><b>Ваша организация:</b> Математический институт им. В.А. Стеклова Российской академии наук</p>
+							<ul>
+								<li><a href="./collection.html">Моя коллекция</a></li>	
+								<li><a href="./manuscript.html">Загрузить рукопись</a></li>	
+								<li><a href="./info.html">Личная информация</a></li>	
+								<li><a href="./pubs.html">Список публикаций</a></li>
+								<li><a href="#">Выход</a></li>
+							</ul>
+						</section>
+					</div>
+				</header>
+				<aside class="left" id = "left">
+					<ul class="search" id="search">
+						<li><a href="" class="search_pubs">Поиск публикаций</a></li>
+						<li><a href="" class="search_links">Поиск ссылок</a></li>
+					</ul>
+					<section class="serv_links" id="serv_links">
+						<ul>
+							<li><a href="#">Программное обеспечение</a></li>	
+							<li><a href="#">Классификаторы</a></li>	
+							<li><a href="#">Полезные ссылки</a></li>	
+							<li><a href="#">Пользовательское соглашение</a></li>
+						</ul>
+					</section>
+					<section class="soc_links" id="soc_links">
+						<ul>
+							<li><span class="fa fa-rss-square fa-lg"></span><a href="#"><b>RSS</b></a></li>	
+							<li><a href="#">Google</a></li>	
+							<li><a href="#">Youtube</a></li>	
+							<li><a href="#">MathJax</a></li>	
+							<li><a href="#">Crossref</a></li>
+						</ul>		
+					</section>
+				</aside>
+			
+				<main class="main">
+					<div class="pers-info">
+						<h2>Личная информация</h2>
+						<form action="" name="">
+							<table>
+								<tr>
+									<td></td>
+									<td>Информация на русском языке</td>
+									<td>Информация на английском языке</td>
+								</tr>
+								<tr>
+									<td colspan="3" class="colored-text">1. Данные, обязательные для регистрации</td>
+								</tr>
+								<tr>
+									<td><label for="lname">Фамилия</label> / <label for="lname-eng">Last name:</label></td>
+									<td><input type="text" id="lname"></td>
+									<td><input type="text" id="lname-eng"></td>
+								</tr>
+								<tr>
+									<td><label for="fname">Имя</label> / <label for="fname-eng">Fist name:</label></td>
+									<td><input type="text" id="fname"></td>
+									<td><input type="text" id="fname-eng"></td>
+								</tr>
+								<tr>
+									<td><label for="sname">Отчество</label> / <label for="sname-eng">Second name:</label></td>
+									<td><input type="text" id="sname"></td>
+									<td><input type="text" id="sname-eng"></td>
+								</tr>
+								<tr>
+									<td>Инициалы и фамилия:</td>
+									<td><input type="text">
+										<p><label><input type="checkbox" class="check">исправить инициалы</label></p>
+									</td>
+									<td><input type="text">
+										<p><label><input type="checkbox" class="check">исправить инициалы</label></p>
+									</td>
+								</tr>
+								<tr>
+									<td><label for="sex">Пол:</label></td>
+									<td><div class="select-style">
+											<select id="sex">
+												<option></option>
+												<option>мужской</option>
+												<option>женский</option>
+											</select>
+											<div class="select-arrow"></div>
+										</div>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="sci-degree">Уч. степень:</label></td>
+									<td>
+										<div class="select-style">
+											<select id="sci-degree">
+												<option>без ученой степени</option>
+												<option>доктор физико-математических наук</option>
+												<option>кандидат физико-математических наук</option>
+											</select>
+											<div class="select-arrow"></div>
+										</div>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="sci-status">Уч. звание:</label></td>
+									<td>
+										<div class="select-style">
+											<select id="sci-status">
+												<option>без звания</option>
+												<option>профессор</option>
+												<option>доцент</option>
+											</select>
+											<div class="select-arrow"></div>
+										</div>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="academ-status">Академ. звание:</label></td>
+									<td>
+										<div class="select-style">
+											<select id="academ-status">
+												<option>без звания</option>
+												<option>академик РАН</option>
+												<option>член-корреспондент РАН</option>
+											</select>
+											<div class="select-arrow"></div>
+										</div>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="org">Организация</label> / <label for="org-eng">Organisation:</label></td>
+									<td><textarea id="org" rows="4"></textarea><p>(полное название места работы/учебы)</p></td>
+									<td><textarea id="org-eng" rows="4"></textarea><p>(полное название места работы/учебы)</p></td>
+								</tr>
+								<tr>
+									<td><label for="mail">E-mail:</label></td>
+									<td><input type="email" id="mail">
+										<p><label><input type="checkbox" class="check">показывать e-mail на сайте (в закодированном виде)</label></p>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="login">Логин:</label></td>
+									<td><input type="text" id="login"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="psw1">Пароль:</label></td>
+									<td><input type="password" id="psw1"><p>(Не заполняйте это поле, если Вы не желаете изменить Ваш пароль)</p></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="psw2">Подтвердите пароль:</label></td>
+									<td><input type="password" id="psw2"><p>(Не заполняйте это поле, если Вы не желаете изменить Ваш пароль)</p></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td colspan="3" class="colored-text">2. Данные, обязательные для создания персональной страницы на портале Math-Net.Ru</td>
+								</tr>
+								<tr>
+									<td colspan="3"><p class="center"><label><input type="checkbox" class="check">Я хочу организовать персональную страницу и согласен, чтобы нижеследующая информация была представлена на портале Math-Net.Ru</label></p></td>
+								</tr>
+								<tr>
+									<td>Дата рождения:</td>
+									<td>
+										<div class="select-style">
+											<select>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+											<div class="select-arrow"></div>
+										</div>
+										<div class="select-style">
+											<select>
+												<option>январь</option>
+												<option>февраль</option>
+												<option>март</option>
+												<option>апрель</option>
+												<option>май</option>
+											</select>
+											<div class="select-arrow"></div>
+										</div>
+										<input type="text" id="yr">
+										<p><label><input type="checkbox" class="check">показывать на сайте</label></p>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="sci">Основные темы научной работы</label> / <label for="sci-eng">Subject:</label></td>
+									<td><textarea id="sci" rows="5"></textarea>
+										<p><label><input type="checkbox" class="check">показывать темы научной работы на сайте</label></p>
+									</td>
+									<td><textarea id="sci-eng" rows="5"></textarea></td>
+								</tr>
+								<tr>
+									<td><label for="keywords">Ключевые слова</label> / <label for="keywords-eng">Keywords:</label></td>
+									<td><textarea id="keywords" rows="5"></textarea>
+										<p><label><input type="checkbox" class="check">показывать ключевые слова на сайте</label></p>
+									</td>
+									<td><textarea id="keywords-eng" rows="5"></textarea></td>
+								</tr>
+								<tr>
+									<td><label for="mathscinet">MathSciNet:</label></td>
+									<td><input type="text" id="mathscinet">
+										<p>(персональный код в базе MathSciNet)</p>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="zentralblatt">ZentralBlatt:</label></td>
+									<td><input type="text" id="zentralblatt">
+										<p>(персональный код в базе ZentralBlatt)</p>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="google-scholar">Google-Scholar:</label></td>
+									<td><input type="text" id="google-scholar">
+										<p>(персональный код в Google-Scholar)</p>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="elibrary">eLibrary.Ru:</label></td>
+									<td><input type="text" id="elibrary">
+										<p>(персональный числовой код или SPIN код в eLibrary.Ru)</p>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="istina">IstinaResearcherID:</label></td>
+									<td><input type="text" id="istina">
+										<p>(персональный код в системе ИСТИНА, МГУ)</p>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="orcid">ORCID:</label></td>
+									<td><input type="text" id="orcid">
+										<p>(персональный код ORCID)</p>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="researcherid">ResearcherID:</label></td>
+									<td><input type="text" id="researcherid">
+										<p>(персональный код ResearcherID)</p>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="scopusid">ScopusID:</label></td>
+									<td><input type="text" id="scopusid">
+										<p>(персональный код в Scopus)</p>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="researchgate">ResearchGate:</label></td>
+									<td><input type="text" id="researchgate">
+										<p>(персональный код в ResearchGate)</p>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="arxiv">ArxivID:</label></td>
+									<td><input type="text" id="arxiv">
+										<p>(персональный код в ArXiv)</p>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="inspire">inSPIRE:</label></td>
+									<td><input type="text" id="inspire">
+										<p>(персональная страница inSPIRE, указать URL)</p>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td rowspan="2"><label for="pubs">Основные публикации</label> / <label for="pubs-eng">Main publications:</label></td>
+									<td colspan="2">Введите не более 5 основных публикаций по правилам пакета amsbib. Стиль оформления литературы пакета amsbib.sty соответствует стилю, принятому в ведущих журналах ОМН РАН. Воспользуйтесь интерактивным вводом ссылок.</td>
+								</tr>
+								<tr>
+									<td><textarea id="pubs" rows="10"></textarea>
+										<p class="center"><button>Интерактивный ввод ссылок</button></p>
+									</td>
+									<td><textarea id="pubs-eng" rows="10"></textarea>
+										<p class="center"><button>Интерактивный ввод ссылок</button></p>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="3" class="colored-text">3. Дополнительные данные</td>
+								</tr>
+								<tr>
+									<td><label for="tel">Телефон:</label></td>
+									<td><input type="tel" id="tel">
+										<p>(будет показан на сайте)</p>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="tel-hidden">Доп. телефон:</label></td>
+									<td><input type="tel" id="tel-hidden">
+										<p>(не будет показан на сайте)</p>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="fax">Факс:</label></td>
+									<td><input type="text" id="fax">
+										<p>(будет показан на сайте)</p>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="fax-hidden">Доп. факс:</label></td>
+									<td><input type="text" id="fax-hidden">
+										<p>(не будет показан на сайте)</p>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="email-hidden">Доп. E-mail:</label></td>
+									<td><input type="email" id="email-hidden">
+										<p>(не будет показан на сайте)</p>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="vak">Код ВАК:</label></td>
+									<td>
+										<div class="select-style">
+											<select id="vak">
+												<option></option>
+												<option>01.00.00 - физико-математические науки</option>
+												<option>01.00.00 - физико-математические науки</option>
+												<option>01.00.00 - физико-математические науки</option>
+											</select>
+											<div class="select-arrow"></div>
+										</div>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="yr-defence">Год защиты:</label></td>
+									<td><input type="text" id="yr-defence"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="web">Website:</label></td>
+									<td><input type="text" id="web"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="msc">MSC:</label></td>
+									<td><input type="text" id="msc"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="pacs">PACS:</label></td>
+									<td><input type="text" id="pacs"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="udc">УДК:</label></td>
+									<td><input type="text" id="udc"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label for="biography">Научная биография</label> / <label for="biography-eng">Biography:</label></td>
+									<td><textarea id="biography" rows="10"></textarea></td>
+									<td><textarea id="biography-eng" rows="10"></textarea></td>
+								</tr>
+								<tr>
+									<td colspan="3" class="colored-text">4. Фотография</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>
+										<p><label><input type="radio" class="check">Выбрать файл фотографии с жесткого диска</label></p>
+										<p><input type="submit" value="Выберите файл"><input type="text" value="Файл не выбран" width="auto"></p>
+										<p><label><input type="radio" class="check">Указать URL фотографии</label></p>
+										<p><input type="text"></p>
+										<p><label><input type="checkbox" class="check">показывать фотографию на сайте</label></p>
+									</td>
+									<td></td>
+								</tr>
+							</table>
+							<p>Нажимая кнопку 'Сохранить данные', я соглашаюсь с хранением и обработкой моих персональных данных в базе Общероссийского математического портала Math-Net.Ru. Информационная система Math-Net.Ru — инновационный проект Математического института им. В. А. Стеклова РАН. Хранение и обработка вышеуказанных данных осуществляется в соответствии с законодательством Российской Федерации.</p>
+							<p><input type="submit" value="Сохранить данные"><button>Вернуть исходные данные</button></p>
+						</form>
+					</div>
+				</main>
+			
+				
+			</div>
+			<footer>
+				<p>&copy; <a href="#">Математический институт им. В. А. Стеклова РАН</a>, 2017</p>
+				<nav class="bottom_nav">
+					<a href="#">Пользовательское соглашение</a>
+					<a href="#">Регистрация</a>
+					<a href="#"> Логотипы</a>
+				</nav>
+				<p><a href="mailto:math-net2017_02@mi.ras.ru"><span class="fa fa-envelope fa-2x"></span>Обратная связь</a></p>
+			</footer>
+		</div>
+		
+		
+		
+	</body>
+</html>

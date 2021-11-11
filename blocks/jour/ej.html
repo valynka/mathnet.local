@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf8">
+		<meta name="description" content="%meta_desc%">
+		<meta name="keywords" content="%meta_key%">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Alegreya|Raleway" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="../../css/main.css" rel="stylesheet">
+		<!--<link rel="stylesheet/less" type="text/css" href="/css/style.less">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>-->
+		<script src="../../js/changelang.js"></script>
+		<script src="../../js/show_links.js"></script>
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<div class="content">
+					<header>
+					<div class="header_left">
+						<div class="change-lang">
+							<img src="../../img/lang.png" id="lang" onclick="ChangePicture()">
+						</div>
+						<p class="logo">Math-Net.Ru</p>
+						<nav>
+							<ul class="menu" id="menu">
+								<li><a href="../../index.html">Главная</a></li>
+								<li><a href="ej.html" class="active">Журналы</a></li>
+								<li><a href="../person/person.html">Персоналии</a></li>
+								<li><a href="../org/organisation.html">Организации</a></li>
+								<li><a href="#" onclick="showConfMenu()">Конференции</a>
+									<ul class="submenu" id="sub_conf">
+										<li><a href="../conf/conf_cur.html">Ближайшие</a></li>
+										<li><a href="../conf/conf_fut.html">Планируемые</a></li>
+										<li><a href="../conf/conf_archive.html">Архив по годам</a></li>
+										<li><a href="../conf/conf_reg.html">Регистрация конференции</a></li>
+									</ul>
+								</li>
+								<li><a href="#" onclick="showSemMenu()">Семинары</a>
+									<ul class="submenu" id="sub_sem">
+										<li><a href="#">Ближайшие</a></li>
+										<li><a href="#">Календарь</a></li>
+										<li><a href="#">Список</a></li>
+										<li><a href="#">Архив по годам</a></li>
+										<li><a href="#">Регистрация семинара</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Видеотека</a></li>
+								<li><a href="#">Личный кабинет</a></li>
+							</ul>
+						</nav>
+						<nav class="mobile">
+							<i class="fa fa-globe" aria-hidden="true" title="Web" onclick="showSocLinks()"></i>
+							<i class="fa fa-tags" aria-hidden="true" title="Полезные ссылки" onclick="showLinks()"></i>
+							<i class="fa fa-sign-in" aria-hidden="true" title="Персональный вход" onclick="showEntry()"></i>
+							<!--<i class="fa fa-user-o" aria-hidden="true" title="Персональный вход" onclick="showEntry()"></i>-->
+							<i class="fa fa-bars" aria-hidden="true" title="Меню" onclick="showMenu()"></i>
+						</nav>
+					</div>	
+										
+					<div class="user-entry" id="entry">
+							<p class="title">Персональный вход:</p>
+						<form name="user-entry" action="#" method="post">
+							<p><input type="text" name="login" placeholder="Логин"></p>
+							<p><input type="password" name="password" placeholder="Пароль"></p>
+							<p><label><input type="checkbox" name="remember_me">Запомнить&nbsp;пароль</label></p>
+							<p><input type="submit" name="user_reg" value="Войти"></p>
+							<div class="reg_links"><a href="#">Забыли пароль?</a>	
+							<a href="#">Регистрация</a></div>
+						</form>
+						
+						<!--<section class="user-panel">
+							<p>ФИО</p>
+						<p><b>Ваша организация:</b> Математический институт им. В.А. Стеклова Российской академии наук</p>
+							<ul>
+								<li><a href="../pers_office/collection.html">Моя коллекция</a></li>	
+								<li><a href="../pers_office/manuscript.html">Загрузить рукопись</a></li>	
+								<li><a href="../pers_office/info.html">Личная информация</a></li>	
+								<li><a href="../pers_office/pubs.html">Список публикаций</a></li>
+								<li><a href="#">Выход</a></li>
+							</ul>
+						</section>-->
+					</div>
+					
+				</header>
+				<aside class="left" id = "left">
+					<i class="fa fa-tags" aria-hidden="true" title="Полезные ссылки" id="tags" onclick="showLeft()"></i>
+					<ul class="search" id="search">
+						<li><a href="" class="search_pubs">Поиск публикаций</a></li>
+						<li><a href="" class="search_links">Поиск ссылок</a></li>
+					</ul>
+					<section class="serv_links" id="serv_links">
+						<ul>
+							<li><a href="#">Программное обеспечение</a></li>	
+							<li><a href="#">Классификаторы</a></li>	
+							<li><a href="#">Полезные ссылки</a></li>	
+							<li><a href="#">Пользовательское соглашение</a></li>
+						</ul>
+					</section>
+					<section class="soc_links" id="soc_links">
+						<ul>
+							<li><span class="fa fa-rss-square fa-lg"></span><a href="#"><b>RSS</b></a></li>	
+							<li><a href="#">Google</a></li>	
+							<li><a href="#">Youtube</a></li>	
+							<li><a href="#">MathJax</a></li>	
+							<li><a href="#">Crossref</a></li>
+						</ul>		
+					</section>
+				</aside>
+			
+				<main class="main" id="main">
+					<div class="jours">
+						<!--<h2>Журналы</h2>-->
+						<p>Раздел "Журналы" — ключевой компонент портала — связывает российские периодические издания в области математических наук в единую информационную систему.</p>	
+						<p>Наряду с информацией о самих журналах, здесь представлены их электронные архивы. Доступ к собранной в архивах информации свободный. Доступ к полным текстам статей дифференцированный, в следующей таблице приведены уровни доступа к каждому изданию, представленному на портале.</p>	
+						<div class="info-message">
+							<p><b>Вниманию подписчиков 2017 года журналов</b></p>
+							<ul>
+								<li>Дискретная математика,</li>
+								<li>Известия Российской академии наук. Серия математическая,</li>
+								<li>Математические заметки,</li>
+								<li>Теоретическая и математическая физика,</li>
+								<li>Теория вероятностей и ее применения,</li>
+								<li>Успехи математических наук,</li>
+								<li>Функциональный анализ и его приложения.</li>
+							</ul>
+							<p>Подписчикам печатной версии на период подписки (первое и/или второе полугодие 2017 года) на портале Math-Net.Ru открыт свободный доступ к полному электронному архиву журнала.*</p>
+							<p>Для получения доступа, пожалуйста, отправьте заявку по адресу journals@mi.ras.ru и приложите подтверждение подписки на печатное издание (скан-копию договора, квитанцию и т.п.).</p>
+							<p>Организациям доступ предоставляется по IP-адресам, физическим лицам — по паролю. По всем вопросам, пожалуйста, обращайтесь по адресу journals@mi.ras.ru</p>
+							<p class="small">* Подписчикам журнала «Теория вероятностей и ее применения» предоставляется свободный доступ к выпускам 1956–2000 и 2010–2017 годов.</p>
+						</div>
+						<input type="radio" name="joursort" id="publ" autocomplete="off"  checked onclick=""><label for "publ"><a href="ej.html">по издателю</a></label>
+						<input type="radio" name="joursort" id="alpha" autocomplete="off"  onclick=""><label for "alpha"><a href="jourlist_alpha.html">по алфавиту</a></label>
+						<ul class="jour-list" id="jourlist">
+							<li><h4>Российская академия наук, Математический институт им. В.А. Стеклова Российской академии наук</h4>
+								<ul>
+									<li><a href="./jour_main.html">Дискретная математика</a><span class="small"> (Доступ открыт в сети МИАН)</span></li>
+									<li><a href="#">Известия Российской академии наук. Серия математическая</a><span class="small"> (Доступ открыт в сети МИАН)</span></li>
+									<li><a href="#">Математические заметки</a><span class="small"> (Доступ открыт в сети МИАН)</span></li>
+									<li><a href="#">Математический сборник</a><span class="small"> (Доступ открыт в сети МИАН)</span></li>
+									<li><a href="#">Теоретическая и математическая физика</a><span class="small"> (Доступ открыт в сети МИАН)</span></li>
+									<li><a href="#">Теория вероятностей и ее применения</a><span class="small"> (Доступ открыт в сети МИАН)</span></li>
+									<li><a href="#">Успехи математических наук</a><span class="small"> (Доступ открыт в сети МИАН)</span></li>
+									<li><a href="#">Функциональный анализ и его приложения</a><span class="small"> (Доступ открыт в сети МИАН)</span></li>
+									<li><a href="#">Труды Математического института имени В. А. Стеклова</a><span class="small"> (Доступ открыт в сети МИАН)</span></li>
+								</ul>
+							</li>
+							<li><h4>Российская академия наук, Математический институт им. В.А. Стеклова Российской академии наук</h4>
+								<ul>
+									<li><a href="#">Дискретная математика</a><span class="small"> (Доступ открыт в сети МИАН)</span></li>
+									<li><a href="#">Известия Российской академии наук. Серия математическая</a><span class="small"> (Доступ открыт в сети МИАН)</span></li>
+									<li><a href="#">Математические заметки</a><span class="small"> (Доступ открыт в сети МИАН)</span></li>
+									<li><a href="#">Математический сборник</a><span class="small"> (Доступ открыт в сети МИАН)</span></li>
+									<li><a href="#">Теоретическая и математическая физика</a><span class="small"> (Предоставляется свободный доступ к полным текстам статей, опубликованным в период с 1931 по 2007&nbsp;гг.)</span></li>
+									<li><a href="#">Теория вероятностей и ее применения</a><span class="small"> (Доступ открыт в сети МИАН)</span></li>
+									<li><a href="#">Успехи математических наук</a><span class="small"> (Доступ открыт в сети МИАН)</span></li>
+									<li><a href="#">Функциональный анализ и его приложения</a><span class="small"> (Доступ открыт в сети МИАН)</span></li>
+									<li><a href="#">Труды Математического института имени В. А. Стеклова</a><span class="small"> (Предоставляется свободный доступ к полным текстам статей, опубликованным в период с 1931 по 2007 гг.)</span></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</main>
+			
+				<aside class="right" id="right">
+					<section class="statistics yellow">
+						<p>Статистика Math-Net.Ru</p>
+						<div class="table">
+							<ul>
+								<li>Журналов:</li>
+								<li>124</li>
+							</ul>
+							<ul>
+								<li>Авторов:</li>
+								<li>93953</li>
+							</ul>
+							<ul>
+								<li>Публикаций:</li>
+								<li>200136</li>
+							</ul>
+							<ul>
+								<li>Научных статей:</li>
+								<li>186802</li>
+							</ul>
+							<ul>
+								<li>Цитированных статей:</li>
+								<li>81175</li>
+							</ul>
+							<ul>
+								<li>Прямых ссылок:</li>
+								<li>1354728</li>
+							</ul>
+							<ul>
+								<li>Обратных ссылок:</li>
+								<li>440669</li>
+							</ul>
+						</div>
+					</section>
+					<section class="statistics yellow">
+						<ul>
+							<li><a href="#">Часто публикуемые авторы</a></li>
+							<li><a href="#">Часто цитируемые авторы</a></li>
+							<li><a href="#">Часто цитируемые статьи</a></li>
+							<li><a href="#">Популярные статьи</a></li>
+						</ul>
+					</section>
+					
+				</aside>
+			</div>
+			<footer>
+				<p>&copy; <a href="#">Математический институт им. В. А. Стеклова РАН</a>, 2017</p>
+				<nav class="bottom_nav">
+					<a href="#">Пользовательское соглашение</a>
+					<a href="#">Регистрация</a>
+					<a href="#"> Логотипы</a>
+				</nav>
+				<p><a href="mailto:math-net2017_02@mi.ras.ru"><span class="fa fa-envelope fa-2x"></span>Обратная связь</a></p>
+			</footer>
+		</div>
+		
+		
+	</body>
+</html>

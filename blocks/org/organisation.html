@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf8">
+		<meta name="description" content="%meta_desc%">
+		<meta name="keywords" content="%meta_key%">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Alegreya|Raleway" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="../../css/main.css" rel="stylesheet">
+		<!--<link rel="stylesheet/less" type="text/css" href="/css/style.less">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>-->
+		<script src="../../js/changelang.js"></script>
+		<script src="../../js/show_links.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="content">
+					<header>
+					<div class="header_left">
+						<div class="change-lang">
+							<img src="../../img/lang.png" id="lang" onclick="ChangePicture()">
+						</div>
+						<p class="logo">Math-Net.Ru</p>
+						<nav>
+							<ul class="menu" id="menu">
+								<li><a href="../../index.html">Главная</a></li>
+								<li><a href="../jour/ej.html">Журналы</a></li>
+								<li><a href="../person/person.html">Персоналии</a></li>
+								<li><a href="./organisation.html" class="active">Организации</a></li>
+								<li><a href="#" onclick="showConfMenu()">Конференции</a>
+									<ul class="submenu" id="sub_conf">
+										<li><a href="../conf/conf_cur.html">Ближайшие</a></li>
+										<li><a href="../conf/conf_fut.html">Планируемые</a></li>
+										<li><a href="../conf/conf_archive.html">Архив по годам</a></li>
+										<li><a href="../conf/conf_reg.html">Регистрация конференции</a></li>
+									</ul>
+								</li>
+								<li><a href="#" onclick="showSemMenu()">Семинары</a>
+									<ul class="submenu" id="sub_sem">
+										<li><a href="#">Ближайшие</a></li>
+										<li><a href="#">Календарь</a></li>
+										<li><a href="#">Список</a></li>
+										<li><a href="#">Архив по годам</a></li>
+										<li><a href="#">Регистрация семинара</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Видеотека</a></li>
+								<li><a href="#">Личный кабинет</a></li>
+							</ul>
+						</nav>
+						<nav class="mobile">
+							<i class="fa fa-globe" aria-hidden="true" title="Web" onclick="showSocLinks()"></i>
+							<i class="fa fa-tags" aria-hidden="true" title="Полезные ссылки" onclick="showLinks()"></i>
+							<i class="fa fa-sign-in" aria-hidden="true" title="Персональный вход" onclick="showEntry()"></i>
+							<!--<i class="fa fa-user-o" aria-hidden="true" title="Персональный вход" onclick="showEntry()"></i>-->
+							<i class="fa fa-bars" aria-hidden="true" title="Меню" onclick="showMenu()"></i>
+						</nav>
+					</div>	
+										
+					<div class="user-entry" id="entry">
+							<p class="title">Персональный вход:</p>
+						<form name="user-entry" action="#" method="post">
+							<p><input type="text" name="login" placeholder="Логин"></p>
+							<p><input type="password" name="password" placeholder="Пароль"></p>
+							<p><label><input type="checkbox" name="remember_me">Запомнить&nbsp;пароль</label></p>
+							<p><input type="submit" name="user_reg" value="Войти"></p>
+							<div class="reg_links"><a href="#">Забыли пароль?</a>	
+							<a href="#">Регистрация</a></div>
+						</form>
+						
+						<!--<section class="user-panel">
+						<p>ФИО</p>
+						<p><b>Ваша организация:</b> Математический институт им. В.А. Стеклова Российской академии наук</p>
+							<ul>
+								<ul>
+								<li><a href="../pers_office/collection.html">Моя коллекция</a></li>	
+								<li><a href="../pers_office/manuscript.html">Загрузить рукопись</a></li>	
+								<li><a href="../pers_office/info.html">Личная информация</a></li>	
+								<li><a href="../pers_office/pubs.html">Список публикаций</a></li>
+								<li><a href="#">Выход</a></li>
+							</ul>
+							</ul>
+						</section>-->
+					</div>
+					
+				</header>
+				<aside class="left" id = "left">
+					<i class="fa fa-tags" aria-hidden="true" title="Полезные ссылки" id="tags" onclick="showLeft()"></i>
+					<ul class="search" id="search">
+						<li><a href="" class="search_pubs">Поиск публикаций</a></li>
+						<li><a href="" class="search_links">Поиск ссылок</a></li>
+					</ul>
+					<section class="serv_links" id="serv_links">
+						<ul>
+							<li><a href="#">Программное обеспечение</a></li>	
+							<li><a href="#">Классификаторы</a></li>	
+							<li><a href="#">Полезные ссылки</a></li>	
+							<li><a href="#">Пользовательское соглашение</a></li>
+						</ul>
+					</section>
+					<section class="soc_links" id="soc_links">
+						<ul>
+							<li><span class="fa fa-rss-square fa-lg"></span><a href="#"><b>RSS</b></a></li>	
+							<li><a href="#">Google</a></li>	
+							<li><a href="#">Youtube</a></li>	
+							<li><a href="#">MathJax</a></li>	
+							<li><a href="#">Crossref</a></li>
+						</ul>		
+					</section>
+				</aside>
+			
+				<main class="main" id="main">
+					<div class="organisation">
+						<div class="letters">
+							<a href="#">А</a>
+							<a href="#">Б</a>
+							<a href="#">В</a>
+							<a href="#">Г</a>
+							<a href="#">Д</a>
+						</div>
+						<form class="org-search">
+							<div class="row"><input type="text" placeholder="Поиск"></div>
+							<div class="row">
+								<label class="radio"><input type="radio"> по названию</label>
+								<label class="radio"><input type="radio"> по адресу</label>
+								<label class="radio"><input type="radio"> по фрагменту E-mail или Website</label>
+							</div>
+							<div class="row"><label for="lang">Язык поиска:</label>
+								<div class="select-style">
+									<select id="lang">
+										<option value="rus">русский</option>
+										<option value="eng">английский</option>
+									</select>
+									<div class="select-arrow"></div>
+								</div>
+							</div>
+							<div class="row"><input type="submit" value="Поиск"></div>
+						</form>
+						
+						<section class="max-publ">
+							<div class="table">
+								<h5>Организации с наибольшим числом публикаций</h5>
+								<ul>
+									<li>1.</li>
+									<li><a href="./org_details.html">Математический институт им. В.А. Стеклова Российской академии наук</a></li>
+									<li>585</li>
+								</ul>
+								<ul>
+									<li>2.</li>
+									<li><a href="#">Санкт-Петербургский государственный университет</a></li>
+									<li>585</li>
+								</ul>
+								<ul>
+									<li>3.</li>
+									<li><a href="#">Институт математики им. С.Л. Соболева Сибирского отделения Российской академии наук</a></li>
+									<li>585</li>
+								</ul>
+							</div>
+						</section>
+						<section class="max-auth">
+							<div class="table">
+								<h5>Организации с наибольшим числом авторов</h5>
+								<ul>
+									<li>1.</li>
+									<li><a href="#">Московский государственный университет имени М.В. Ломоносова</a></li>
+									<li>585</li>
+								</ul>
+								<ul>
+									<li>2.</li>
+									<li><a href="#">Санкт-Петербургский государственный университет</a></li>
+									<li>585</li>
+								</ul>
+								<ul>
+									<li>3.</li>
+									<li><a href="#">Объединенный институт высоких температур РАН</a></li>
+									<li>585</li>
+								</ul>
+							</div>
+						</section>
+						
+					</div>
+				</main>
+			</div>
+			<footer>
+				<p>&copy; <a href="#">Математический институт им. В. А. Стеклова РАН</a>, 2017</p>
+				<nav class="bottom_nav">
+					<a href="#">Пользовательское соглашение</a>
+					<a href="#">Регистрация</a>
+					<a href="#"> Логотипы</a>
+				</nav>
+				<p><a href="mailto:math-net2017_02@mi.ras.ru"><span class="fa fa-envelope fa-2x"></span>Обратная связь</a></p>
+			</footer>
+		</div>
+	</body>
+</html>

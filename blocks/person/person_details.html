@@ -1,0 +1,295 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf8">
+		<meta name="description" content="%meta_desc%">
+		<meta name="keywords" content="%meta_key%">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Alegreya|Raleway" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="../../css/main.css" rel="stylesheet">
+		<!--<link rel="stylesheet/less" type="text/css" href="/css/style.less">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>-->
+		<script src="../../js/changelang.js"></script>
+		<script src="../../js/show_links.js"></script>
+		<script src="../../js/tabs.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="content">
+					<header>
+					<div class="header_left">
+						<div class="change-lang">
+							<img src="../../img/lang.png" id="lang" onclick="ChangePicture()">
+						</div>
+						<p class="logo">Math-Net.Ru</p>
+						<nav>
+							<ul class="menu" id="menu">
+								<li><a href="../../index.html">Главная</a></li>
+								<li><a href="../jour/ej.html">Журналы</a></li>
+								<li><a href="./person.html" class="active">Персоналии</a></li>
+								<li><a href="../org/organisation.html">Организации</a></li>
+								<li><a href="#" onclick="showConfMenu()">Конференции</a>
+									<ul class="submenu" id="sub_conf">
+										<li><a href="../conf/conf_cur.html">Ближайшие</a></li>
+										<li><a href="../conf/conf_fut.html">Планируемые</a></li>
+										<li><a href="../conf/conf_archive.html">Архив по годам</a></li>
+										<li><a href="../conf/conf_reg.html">Регистрация конференции</a></li>
+									</ul>
+								</li>
+								<li><a href="#" onclick="showSemMenu()">Семинары</a>
+									<ul class="submenu" id="sub_sem">
+										<li><a href="#">Ближайшие</a></li>
+										<li><a href="#">Календарь</a></li>
+										<li><a href="#">Список</a></li>
+										<li><a href="#">Архив по годам</a></li>
+										<li><a href="#">Регистрация семинара</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Видеотека</a></li>
+								<li><a href="#">Личный кабинет</a></li>
+							</ul>
+						</nav>
+						<nav class="mobile">
+							<i class="fa fa-globe" aria-hidden="true" title="Web" onclick="showSocLinks()"></i>
+							<i class="fa fa-tags" aria-hidden="true" title="Полезные ссылки" onclick="showLinks()"></i>
+							<!--<i class="fa fa-sign-in" aria-hidden="true" title="Персональный вход" onclick="showEntry()"></i>-->
+							<i class="fa fa-user-o" aria-hidden="true" title="Персональный вход" onclick="showEntry()"></i>
+							<i class="fa fa-bars" aria-hidden="true" title="Меню" onclick="showMenu()"></i>
+						</nav>
+					</div>	
+										
+					<div class="user-entry" id="entry">
+							<p class="title">Персональный вход:</p>
+						<form name="user-entry" action="#" method="post">
+							<p><input type="text" name="login" placeholder="Логин"></p>
+							<p><input type="password" name="password" placeholder="Пароль"></p>
+							<p><label><input type="checkbox" name="remember_me">Запомнить&nbsp;пароль</label></p>
+							<p><input type="submit" name="user_reg" value="Войти"></p>
+							<div class="reg_links"><a href="#">Забыли пароль?</a>	
+							<a href="#">Регистрация</a></div>
+						</form>
+						
+						<!--<section class="user-panel">
+						<p>ФИО</p>
+						<p><b>Ваша организация:</b> Математический институт им. В.А. Стеклова Российской академии наук</p>
+							<ul>
+								<li><a href="../pers_office/collection.html">Моя коллекция</a></li>	
+								<li><a href="../pers_office/manuscript.html">Загрузить рукопись</a></li>	
+								<li><a href="../pers_office/info.html">Личная информация</a></li>	
+								<li><a href="../pers_office/pubs.html">Список публикаций</a></li>
+								<li><a href="#">Выход</a></li>
+							</ul>
+						</section>-->
+					</div>
+					
+				</header>
+				<aside class="left" id = "left">
+					<i class="fa fa-tags" aria-hidden="true" title="Полезные ссылки" id="tags" onclick="showLeft()"></i>
+					<ul class="search" id="search">
+						<li><a href="" class="search_pubs">Поиск публикаций</a></li>
+						<li><a href="" class="search_links">Поиск ссылок</a></li>
+					</ul>
+					<section class="serv_links" id="serv_links">
+						<ul>
+							<li><a href="#">Программное обеспечение</a></li>	
+							<li><a href="#">Классификаторы</a></li>	
+							<li><a href="#">Полезные ссылки</a></li>	
+							<li><a href="#">Пользовательское соглашение</a></li>
+						</ul>
+					</section>
+					<section class="soc_links" id="soc_links">
+						<ul>
+							<li><span class="fa fa-rss-square fa-lg"></span><a href="#"><b>RSS</b></a></li>	
+							<li><a href="#">Google</a></li>	
+							<li><a href="#">Youtube</a></li>	
+							<li><a href="#">MathJax</a></li>	
+							<li><a href="#">Crossref</a></li>
+						</ul>		
+					</section>
+				</aside>
+			
+				<main class="main" id="main">
+					<div class="pers-details">
+						
+						<section class="info">
+							<div class="photo">
+								<img class="photo_main" src="../../img/8433.jpg">
+							</div>
+							<p class="fio">Козлов Валерий Васильевич</p>
+							<p>академик РАН</p>
+							<p>профессор</p>
+							<p>доктор физико-математических наук (1978)</p>
+							<p><span class="colored-text">Специальность ВАК:</span> 01.02.01 (теоретическая механика)</p>
+							<p><span class="colored-text">Дата рождения:</span> 1.01.1950</p>
+							<p><span class="colored-text">E-mail:</span> kozlov@pran.ru, vvkozlov@mi.ras.ru</p>
+						</section>
+						<section class="subject">
+							<p class="colored-text">Основные темы научной работы:</p>
+							<div>Научные интересы:
+								Теоретическая и статистическая механика, смежные вопросы качественной теории дифференциальных уравнений, дифференциальной геометрии и топологии, вариационного исчисления.
+								Основные направления научных исследований:
+								общие принципы динамики, проблема интегрируемости уравнений движения, вариационные методы механики, теория устойчивости движения, динамика твердого тела, неголономная механика, теория удара, симметрии и интегральные инварианты, математические вопросы статистической механики, эргодическая теория и математическая физика.</div>
+						</section>
+						<section class="keywords">
+							<p><span class="colored-text">Ключевые слова:</span> аналитическая механика, теория динамических систем, вариационное исчисление, дифференциальная топология, теория устойчивости.</p>
+						</section>
+						<section class="main-pubs">
+							<p class="colored-text">Основные публикации: </p>
+						</section>
+						<section class="orgs">
+							<p class="colored-text">Организации</p>
+							<ul>
+								<li>Математический институт им. В.А. Стеклова Российской академии наук, г. Москва</li>
+								<li>Российская академия наук</li>
+								<li>Московский государственный университет имени М. В. Ломоносова, механико-математический факультет</li>
+							</ul>
+						</section>
+						<section class="pers-links">
+						</section>
+						
+						<section id='perstabs' class='pers-tabs scroll'>
+							<div class='pers-tabs-nav'>
+								<a href='#' class='pers-tabs-nav_link'>Научная биография</a>
+								<a href='#' class='pers-tabs-nav_link'>Полный список публикаций</a>
+								<a href='#' class='pers-tabs-nav_link'>Публикации в базе данных Math-Net.Ru</a>
+								<a href='#' class='pers-tabs-nav_link'>Книги в базе данных Math-Net.Ru</a>
+								<a href='#' class='pers-tabs-nav_link'>Доклады и лекции</a>
+							</div>
+				
+							<div class='pers-tab'>
+								<div class='pers-tab_content'>
+									<p>Родился 1 января 1950 г., Рязанская обл., СССР.</p>
+									<p>В 1972 г. закончил механико-математический факультет Московского государственного университета им. М. В. Ломоносова. Дипломная работа «Неинтегрируемость уравнений вращения тяжелого несимметричного твердого тела вокруг неподвижной точки».</p>
+									<p>1972–1973: Аспирант механико-математического факультета МГУ им. М. В. Ломоносова.</p>
+									<p>1974: Диссертация на соискание ученой степени кандидата физико-математических наук «Качественное исследование движения твердого тела в интегрируемых случаях» (защищена на механико-математическом факультете МГУ им. М. В. Ломоносова).</p>
+									<p>1978: Диссертация на соискание ученой степени доктора физико-математических наук «Вопросы качественного анализа в динамике твердого тела» (защищена на механико-математическом факультете МГУ им. М. В. Ломоносова).</p>
+								</div>
+							</div>
+							<div class='pers-tab ppList'>
+								<div class='ppListMenu'>	
+									<input type='radio' name='ppLink' id='years' autocomplete='off'  checked onclick='showMode(this.id,".$personid.")'><label for='years'>по годам</label>
+									<input type='radio' name='ppLink' id='groups' autocomplete='off' onclick='showMode(this.id,".$personid.")'><label for='groups'>по типам</label>
+									<input type='radio' name='ppLink' id='sci' autocomplete='off' onclick='showMode(this.id,".$personid.")'><label for='sci'>научные публикации</label>
+									<input type='radio' name='ppLink' id='simple' autocomplete='off' onclick='showMode(this.id,".$personid.")'><label for='simple'>общий список</label>
+								</div>
+								<div id='pp'>Здесь список в зависимости от выбранного режима. Скрипт в файле /data1/home/http/MATHNET/website.project.Nov2016/php/fullpubs.phtml</div>
+							</div>
+							<div class='pers-tab'>
+								<div class='pers-tab_content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+							</div>
+							
+							<div class='pers-tab'>
+								<div class='pers-tab_content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+							</div>
+							<div class='pers-tab'>
+								<div class='pers-tab_content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+							</div>
+						</section>
+						
+						
+					</div>
+				</main>
+			
+				<aside class="right" id="right">
+					<section class="statistics yellow">
+						<div class="table">
+							<ul>
+								<li>Публикаций:</li>
+								<li>399</li>
+							</ul>
+							<ul>
+								<li>Научных статей:</li>
+								<li>334</li>
+							</ul>
+							<ul>
+								<li>в MathSciNet:</li>
+								<li>315</li>
+							</ul>
+							<ul>
+								<li>в zbMATH:</li>
+								<li>299</li>
+							</ul>
+							<ul>
+								<li>в Web of Science:</li>
+								<li>249</li>
+							</ul>
+							<ul>
+								<li>в Scopus:</li>
+								<li>184</li>
+							</ul>
+							<ul>
+								<li>Цитированных статей:</li>
+								<li>240</li>
+							</ul>
+							<ul>
+								<li>Ссылок в Math-Net.Ru:</li>
+								<li>629</li>
+							</ul>
+							<ul>
+								<li>Ссылок в MathSciNet:</li>
+								<li>1895</li>
+							</ul>
+							<ul>
+								<li>Ссылок в Web of Science:</li>
+								<li>964</li>
+							</ul>
+							<ul>
+								<li>Ссылок в Scopus:</li>
+								<li>701</li>
+							</ul>
+							<ul>
+								<li>Лекций и докладов:</li>
+								<li>72</li>
+							</ul>
+						</div>
+					</section>
+					<section class="statistics light">
+						<p>Статистика просмотров:</p>
+						<div class="table">
+							<ul>
+								<li>Эта страница:</li>
+								<li>31082</li>
+							</ul>
+							<ul>
+								<li>Страницы публикаций:</li>
+								<li>45496</li>
+							</ul>
+							<ul>
+								<li>Полные тексты:</li>
+								<li>12729</li>
+							</ul>
+							<ul>
+								<li>Списки литературы:</li>
+								<li>2773</li>
+							</ul>
+						</div>
+					</section>
+					
+				</aside>
+			</div>
+			<footer>
+				<p>&copy; <a href="#">Математический институт им. В. А. Стеклова РАН</a>, 2017</p>
+				<nav class="bottom_nav">
+					<a href="#">Пользовательское соглашение</a>
+					<a href="#">Регистрация</a>
+					<a href="#"> Логотипы</a>
+				</nav>
+				<p><a href="mailto:math-net2017_02@mi.ras.ru"><span class="fa fa-envelope fa-2x"></span>Обратная связь</a></p>
+			</footer>
+		</div>
+		
+		
+		<script>
+		  var myTabs = tabs({
+			el: '#perstabs',
+			tabNavigationLinks: '.pers-tabs-nav_link',
+			tabContentContainers: '.pers-tab'
+		  });
+		  
+		  myTabs.init();
+  
+		</script>	
+	</body>
+</html>

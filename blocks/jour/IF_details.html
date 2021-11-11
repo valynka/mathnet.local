@@ -1,0 +1,443 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf8">
+		<meta name="description" content="%meta_desc%">
+		<meta name="keywords" content="%meta_key%">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Alegreya|Raleway" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="../../css/main.css" rel="stylesheet">
+		<!--<link rel="stylesheet/less" type="text/css" href="/css/style.less">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>-->
+		<script src="../../js/changelang.js"></script>
+		<script src="../../js/show_links.js"></script>
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<div class="content">
+					<header>
+					<div class="header_left">
+						<div class="change-lang">
+							<img src="../../img/lang.png" id="lang" onclick="ChangePicture()">
+						</div>
+						<p class="logo">Math-Net.Ru</p>
+						<nav>
+							<ul class="menu" id="menu">
+								<li><a href="../../index.html">Главная</a></li>
+								<li><a href="./ej.html" class="active">Журналы</a></li>
+								<li><a href="../person/person.html">Персоналии</a></li>
+								<li><a href="../org/organisation.html">Организации</a></li>
+								<li><a href="#" onclick="showConfMenu()">Конференции</a>
+									<ul class="submenu" id="sub_conf">
+										<li><a href="../conf/conf_cur.html">Ближайшие</a></li>
+										<li><a href="../conf/conf_fut.html">Планируемые</a></li>
+										<li><a href="../conf/conf_archive.html">Архив по годам</a></li>
+										<li><a href="../conf/conf_reg.html">Регистрация конференции</a></li>
+									</ul>
+								</li>
+								<li><a href="#" onclick="showSemMenu()">Семинары</a>
+									<ul class="submenu" id="sub_sem">
+										<li><a href="#">Ближайшие</a></li>
+										<li><a href="#">Календарь</a></li>
+										<li><a href="#">Список</a></li>
+										<li><a href="#">Архив по годам</a></li>
+										<li><a href="#">Регистрация семинара</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Видеотека</a></li>
+								<li><a href="#">Личный кабинет</a></li>
+							</ul>
+						</nav>
+						<nav class="mobile">
+							<i class="fa fa-globe" aria-hidden="true" title="Web" onclick="showSocLinks()"></i>
+							<i class="fa fa-tags" aria-hidden="true" title="Полезные ссылки" onclick="showLinks()"></i>
+							<!--<i class="fa fa-sign-in" aria-hidden="true" title="Персональный вход" onclick="showEntry()"></i>-->
+							<i class="fa fa-user-o" aria-hidden="true" title="Персональный вход" onclick="showEntry()"></i>
+							<i class="fa fa-bars" aria-hidden="true" title="Меню" onclick="showMenu()"></i>
+						</nav>
+					</div>	
+										
+					<div class="user-entry" id="entry">
+							<p class="title">Персональный вход:</p>
+						<!--<form name="user-entry" action="#" method="post">
+							<p><input type="text" name="login" placeholder="Логин"></p>
+							<p><input type="password" name="password" placeholder="Пароль"></p>
+							<p><label><input type="checkbox" name="remember_me">Запомнить&nbsp;пароль</label></p>
+							<p><input type="submit" name="user_reg" value="Войти"></p>
+							<div class="reg_links"><a href="#">Забыли пароль?</a>	
+							<a href="#">Регистрация</a></div>
+						</form>-->
+						
+						<section class="user-panel">
+						<p>ФИО</p>
+						<p><b>Ваша организация:</b> МИАН</p>
+							<ul>
+								<li><a href="../pers_office/collection.html">Моя коллекция</a></li>	
+								<li><a href="../pers_office/manuscript.html">Загрузить рукопись</a></li>	
+								<li><a href="../pers_office/info.html">Личная информация</a></li>	
+								<li><a href="../pers_office/pubs.html">Список публикаций</a></li>
+								<li><a href="#">Выход</a></li>
+							</ul>
+						</section>
+					</div>
+					
+				</header>
+				<aside class="left" id = "left">
+					<i class="fa fa-tags" aria-hidden="true" title="Полезные ссылки" id="tags" onclick="showLeft()"></i>
+					<ul class="search" id="search">
+						<li><a href="" class="search_pubs">Поиск публикаций</a></li>
+						<li><a href="" class="search_links">Поиск ссылок</a></li>
+					</ul>
+					<section class="serv_links" id="serv_links">
+						<ul>
+							<li><a href="#">Программное обеспечение</a></li>	
+							<li><a href="#">Классификаторы</a></li>	
+							<li><a href="#">Полезные ссылки</a></li>	
+							<li><a href="#">Пользовательское соглашение</a></li>
+						</ul>
+					</section>
+					<section class="soc_links" id="soc_links">
+						<ul>
+							<li><span class="fa fa-rss-square fa-lg"></span><a href="#"><b>RSS</b></a></li>	
+							<li><a href="#">Google</a></li>	
+							<li><a href="#">Youtube</a></li>	
+							<li><a href="#">MathJax</a></li>	
+							<li><a href="#">Crossref</a></li>
+						</ul>		
+					</section>
+				</aside>
+			
+				<main class="main" id="main">
+					<div class="if">
+						<nav class="jour-menu">
+							<ul>
+								<li><a href="./jour_main.html">Общая информация</a></li>
+								<li><a href="./current_num.html">Последний выпуск</a></li>
+								<li><a href="#">Скоро в журнале</a></li>
+								<li><a href="#">Архив</a></li>
+								<li><a href="./IF_details.html" class="active">Импакт-фактор</a></li>
+								<li><a href="#">Правила для авторов</a></li>
+								<li><a href="#">Загрузить рукопись</a></li>
+								<!--<li><a href="#">Авторский договор</a></li>-->
+								<li><a href="#">Историческая справка</a></li>
+							</ul>
+						</nav>
+						<div></div><div class="caption">2-летний импакт-фактор Math-Net.Ru журнала «Математический сборник», 2015 год</div>
+						<section class="if-information">
+							<div class="scroll">
+								<div class="table">
+									<ul>
+										<li></li>
+										<li><a href="#">2015</a></li>
+										<li><a href="#">2014</a></li>
+										<li><a href="#">2013</a></li>
+										<li><a href="#">2012</a></li>
+										<li><a href="#">2011</a></li>
+										<li><a href="#">2010</a></li>
+										<li><a href="#">2009</a></li>
+										<li><a href="#">2008</a></li>
+										<li><a href="#">2007</a></li>
+										<li><a href="#">2006</a></li>
+										<li><a href="#">2005</a></li>
+										<li><a href="#">2004</a></li>
+										<li><a href="#">2003</a></li>
+									</ul>
+									<ul>
+										<li>2-летний импакт-фактор Math-Net.Ru</li>
+										<li><a href="#">0.789</a></li>
+										<li><a href="#">0.789</a></li>
+										<li><a href="#">0.789</a></li>
+										<li><a href="#">0.789</a></li>
+										<li><a href="#">0.789</a></li>
+										<li><a href="#">0.789</a></li>
+										<li><a href="#">0.789</a></li>
+										<li><a href="#">0.789</a></li>
+										<li><a href="#">0.789</a></li>
+										<li><a href="#">0.789</a></li>
+										<li><a href="#">0.789</a></li>
+										<li><a href="#">0.789</a></li>
+										<li><a href="#">0.789</a></li>
+									</ul>
+									<ul>
+										<li>5-летний импакт-фактор Math-Net.Ru</li>
+										<li><a href="#">0.789</a></li>
+										<li><a href="#">0.789</a></li>
+										<li><a href="#">0.789</a></li>
+										<li><a href="#">0.789</a></li>
+										<li><a href="#">0.789</a></li>
+										<li><a href="#">0.789</a></li>
+										<li><a href="#">0.789</a></li>
+										<li><a href="#">0.789</a></li>
+										<li><a href="#">0.789</a></li>
+										<li><a href="#">0.789</a></li>
+										<li><a href="#">0.789</a></li>
+										<li><a href="#">0.789</a></li>
+										<li><a href="#">0.789</a></li>
+									</ul>
+									<ul>
+										<li>Годовой индекс цитирования Math-Net.Ru</li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+									</ul>
+								</div>
+							</div>
+							<p>2-летний импакт-фактор Math-Net.Ru журнала за 2014 год — это количество ссылок в 2014 г. на научные статьи журнала,
+							опубликованные в 2012–2013 гг., деленное на общее число научных статей, опубликованных в журнале в этот период.</p>
+							<p>В приведенной ниже таблице приводится список цитирования в 2014 г. научных статей журнала, опубликованных
+							в 2012–2013 гг. При подсчете учитываются все цитирующие публикации, найденные нами из различных источников, в первую
+							очередь из списков литературы публикаций, представленных на портале. Учитываются ссылки как на оригинальные, так и на
+							переводные версии статей.</p>
+							<p>При нахождении новых ссылок на журнал импакт-фактор Math–Net.Ru может изменяться.</p>
+							<p class="small">Подробнее об импакт-факторе Math-Net.Ru можно прочитать в статье
+								Информационная система Math-Net.Ru. Современное состояние и перспективы развития. Импакт-факторы российских математических журналов,
+							А. Б. Жижченко, А. Д. Изаак, УМН, 64:4(388) (2009), 195–204</p>
+						</section>
+						<section class="current_if">
+							<div class="scroll">
+								<div class="table">
+									<ul>
+										<li>Год</li>
+										<li>2-летний импакт-фактор Math-Net.Ru</li>
+										<li>Научных статей</li>
+										<li>Цитирований</li>
+										<li>Цитированных статей</li>
+										<li>Самоцитирований журнала</li>
+									</ul>
+									<ul>
+										<li>2014</li>
+										<li>0.697</li>
+										<li>152</li>
+										<li>106</li>
+										<li>71</li>
+										<li>13.2%</li>
+									</ul>
+								</div>
+							</div>
+						
+							<section class="cit-list">
+								<div class="caption"><span title="hellow" class="fa fa-arrow-circle-left fa-2x"></span>
+									<a href="#">1</a>
+									<a href="#">2</a>
+									<a href="#">3</a>
+									<a href="#">4</a>
+									
+									<span title="hellow" class="fa fa-arrow-circle-right fa-2x"></span>
+									<a href="#">Полный список</a>
+								</div>
+								<div class="table">
+									<ul>
+										<li>№</li>
+										<li>Цитирующая статья</li>
+										<li></li>
+										<li>Цитированная статья</li>
+									</ul>
+									<ul>
+										<li>1.</li>
+										<li>В. Ж. Думанян, “О разрешимости задачи Дирихле для эллиптического уравнения второго порядка”, ТМФ, 180:2 (2014), 189–205</li>
+										<li><span class="fa fa-arrow-right"></span></li>
+										<li><a href="#">О задаче Дирихле для эллиптического уравнения второго порядка с граничной функцией из</a><br>
+											А. К. Гущин<br>
+											Матем. сб., 203:1 (2012),  3–30
+										</li>
+									</ul>
+									<ul>
+										<li>2.</li>
+										<li>В. Ж. Думанян, “О разрешимости задачи Дирихле для эллиптического уравнения второго порядка”, ТМФ, 180:2 (2014), 189–205</li>
+										<li><span class="fa fa-arrow-right"></span></li>
+										<li><a href="#">О задаче Дирихле для эллиптического уравнения второго порядка с граничной функцией из</a><br>
+											А. К. Гущин<br>
+											Матем. сб., 203:1 (2012),  3–30
+										</li>
+									</ul>
+									<ul class="empty">
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+									<ul>
+										<li>3.</li>
+										<li>В. Ж. Думанян, “О разрешимости задачи Дирихле для эллиптического уравнения второго порядка”, ТМФ, 180:2 (2014), 189–205</li>
+										<li><span class="fa fa-arrow-right"></span></li>
+										<li><a href="#">О задаче Дирихле для эллиптического уравнения второго порядка с граничной функцией из</a><br>
+											А. К. Гущин<br>
+											Матем. сб., 203:1 (2012),  3–30
+										</li>
+									</ul>
+								</div>
+								<div class="caption"><span title="hellow" class="fa fa-arrow-circle-left fa-2x"></span>
+									<a href="#">1</a>
+									<a href="#">2</a>
+									<a href="#">3</a>
+									<a href="#">4</a>
+									
+									<span title="hellow" class="fa fa-arrow-circle-right fa-2x"></span>
+									<a href="#">Полный список</a>
+								</div>
+							</section>
+						</section>
+					</div>
+				</main>
+				
+				<aside class="right" id="right">
+					<section class="jour-search">
+						<p>Дискрет. матем.</p>
+						<form name="jour-search" action="#" method="post">
+							<label>Год:
+								<input type="text">
+							</label>
+							<label>Том:
+								<input type="text">
+							</label>
+							<label>Выпуск:
+								<input type="text">
+							</label>
+							<label>Страница:
+								<input type="text">
+							</label>
+							<input type="submit" value="Найти">
+						</form>
+					</section>
+					<section class="statistics yellow">
+						<div class="table">
+							<ul>
+								<li>Публикаций:</li>
+								<li>124</li>
+							</ul>
+							<ul>
+								<li>Научных статей:</li>
+								<li>93953</li>
+							</ul>
+							<ul>
+								<li>Авторов:</li>
+								<li>200136</li>
+							</ul>
+							<ul>
+								<li>Ссылок на журнал:</li>
+								<li>186802</li>
+							</ul>
+							<ul>
+								<li>Цитированных статей:</li>
+								<li>81175</li>
+							</ul>
+						</div>
+					</section>
+					<section class="statistics yellow">
+						<p>Импакт-фактор Math-Net.Ru</p>
+						<div class="table">
+							<ul>
+								<li><a href="#">за 2016 год:</a></li>
+								<li><a href="#">0.767</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">за 2015 год:</a></li>
+								<li><a href="#">0.616</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">за 2014 год:</a></li>
+								<li><a href="#">0.547</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">за 2013 год:</a></li>
+								<li><a href="#">0.333</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">за 2012 год:</a></li>
+								<li><a href="#">0.381</a></li>
+							</ul>
+						</div>
+					</section>
+					<section class="statistics yellow">
+						<p>Импакт-фактор Web of Science</p>
+						<div class="table">
+							<ul>
+								<li>за 2016 год:</li>
+								<li>0.767</li>
+							</ul>
+							<ul>
+								<li>за 2015 год:</li>
+								<li>0.616</li>
+							</ul>
+							<ul>
+								<li>за 2014 год:</li>
+								<li>0.547</li>
+							</ul>
+							<ul>
+								<li>за 2013 год:</li>
+								<li>0.333</li>
+							</ul>
+							<ul>
+								<li>за 2012 год:</li>
+								<li>0.381</li>
+							</ul>
+						</div>
+					</section>
+					<section class="statistics yellow">
+						<p>Индексы Scopus</p>
+						<div class="table triple">
+							<ul>
+								<li>2016</li>
+								<li>CiteScore</li>
+								<li>0.767</li>
+							</ul>
+							<ul>
+								<li>2016</li>
+								<li>SNIP</li>
+								<li>0.616</li>
+							</ul>
+							<ul>
+								<li>2015</li>
+								<li>CiteScore</li>
+								<li>0.547</li>
+							</ul>
+							<ul>
+								<li>2015</li>
+								<li>IPP</li>
+								<li>0.333</li>
+							</ul>
+							<ul>
+								<li>2014</li>
+								<li>CiteScore</li>
+								<li>0.381</li>
+							</ul>
+						</div>
+					</section>
+					<section class="statistics yellow">
+						<ul>
+							<li><a href="#">Часто публикуемые авторы</a></li>
+							<li><a href="#">Часто цитируемые авторы</a></li>
+							<li><a href="#">Часто цитируемые статьи</a></li>
+							<li><a href="#">Популярные статьи</a></li>
+						</ul>
+					</section>
+					
+				</aside>
+			</div>
+			<footer>
+				<p>&copy; <a href="#">Математический институт им. В. А. Стеклова РАН</a>, 2017</p>
+				<nav class="bottom_nav">
+					<a href="#">Пользовательское соглашение</a>
+					<a href="#">Регистрация</a>
+					<a href="#"> Логотипы</a>
+				</nav>
+				<p><a href="mailto:math-net2017_02@mi.ras.ru"><span class="fa fa-envelope fa-2x"></span>Обратная связь</a></p>
+			</footer>
+		</div>
+		
+		
+	</body>
+</html>
